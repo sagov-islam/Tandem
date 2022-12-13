@@ -15,37 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Montserrat:wght@900&family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">    
 </head>
 <body>
-    <header class="header">
-    <div class="header__content">
-        <a href="index.html" class="logo"></a>
-        <nav class="header__nav">
-            <ul>
-                <li class="@@main">
-                    <a href="./index.html">Главная</a>
-                </li>
-                <li class="active">
-                    <a href="./activities.html">Виды деятельности</a>
-                </li>
-                <li class="@@news">
-                    <a href="">Новости</a>
-                </li>
-                <li class="@@aboutCompany">
-                    <a href="./about-company.html">О компании</a>
-                </li>
-                <li class="@@career">
-                    <a href="">Карьера</a>
-                </li>
-                <li class="@@contacts">
-                    <a href="">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <ul class="header__icons">
-            <li><a href="mailto:" class="btn-letter" aria-label="Написать письмо"></a></li>
-            <li><a href="tel:+" class="btn-phone" aria-label="Позвонить"></a></li>
-        </ul>
-    </div>
-</header>
     <main>
         <section>
             <div class="page-block page-block--bg1">
@@ -66,60 +35,42 @@
                         <p class="activities__text">ООО «ТАНДЕМ» – одна из ведущих и наиболее ответственных компаний в области проектирования для недропользователей. С момента своего  образования в 1994 г. мы страмимся к лидерству в проектном сопровождении геологоразведки, геологии и разработки  нефтяных и газовых месторождений. Годы работы принесли доверие к нашей компании, которая уверена в собственных силах и возможностях. Мы своевременно реагируем на запросы партнеров и готовы адаптироваться под поставленные задачи.</p>
                         <ul class="activities__list">
                             <li>
+                                <a href="#block1" class="activities__link">Обработка и интерпретация СРР</a>
+                            </li>
+                            <li>
+                                <a href="#block2" class="activities__link">Интерпретация ГИС</a>
+                            </li>
+                            <li>
+                                <a href="#block3" class="activities__link">Подсчет запасов углеводородов</a>
+                            </li>
+                            <li>
+                                <a href="#block4" class="activities__link">Проектирование разработки</a>
+                            </li>
+                            <li>
+                                <a href="#block5" class="activities__link">Локализация и освоение ТРИЗ</a>
+                            </li>
+                            <li>
+                                <a href="#block6" class="activities__link">Оценка перспективных участков</a>
+                            </li>
+                            <li>
+                                <a href="#block7" class="activities__link">Проектирование ГРР</a>
+                            </li>
+                            <li>
+                                <a href="#block8" class="activities__link">Экспертиза по недропользованию</a>
+                            </li>
+                            <!-- <li>
                                 <label class="activity-radio">
-                                    <input class="activity-radio__input" type="radio" name="activity">
+                                    <input class="activity-radio__input" type="radio" name="activity" data-scroll="block1">
                                     <span class="activity-radio__style" type="radio">Обработка и интерпретация СРР</span>
                                 </label>
-                            </li>
-                            <li>
-                                <label class="activity-radio">
-                                    <input class="activity-radio__input" type="radio" name="activity">
-                                    <span class="activity-radio__style" type="radio">Интерпретация ГИС</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="activity-radio">
-                                    <input class="activity-radio__input" type="radio" name="activity">
-                                    <span class="activity-radio__style" type="radio">Подсчет запасов углеводородов</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="activity-radio">
-                                    <input class="activity-radio__input" type="radio" name="activity">
-                                    <span class="activity-radio__style" type="radio">Проектирование разработки</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="activity-radio">
-                                    <input class="activity-radio__input" type="radio" name="activity">
-                                    <span class="activity-radio__style" type="radio">Локализация и освоение ТРИЗ</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="activity-radio">
-                                    <input class="activity-radio__input" type="radio" name="activity">
-                                    <span class="activity-radio__style" type="radio">Оценка перспективных участков</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="activity-radio">
-                                    <input class="activity-radio__input" type="radio" name="activity">
-                                    <span class="activity-radio__style" type="radio">Проектирование ГРР</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="activity-radio">
-                                    <input class="activity-radio__input" type="radio" name="activity">
-                                    <span class="activity-radio__style" type="radio">Экспертиза по недропользованию</span>
-                                </label>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="block1">
             <div class="container">
                 <div class="activity">
                     <div class="activity__slider mr-30">
@@ -156,7 +107,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="block2">
             <div class="container">
                 <div class="activity">
                     <div class="activity__text mr-30">
@@ -192,7 +143,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="block3">
             <div class="container">
                 <div class="activity">
                     <div class="activity__slider mr-30">
@@ -228,7 +179,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="block4">
             <div class="container">
                 <div class="activity">
                     <div class="activity__text mr-30">
@@ -264,7 +215,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="block5">
             <div class="container">
                 <div class="activity">
                     <div class="activity__slider mr-30">
@@ -300,7 +251,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="block6">
             <div class="container">
                 <div class="activity">
                     <div class="activity__text mr-30">
@@ -337,7 +288,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="block7">
             <div class="container">
                 <div class="activity">
                     <div class="activity__slider mr-30">
@@ -370,7 +321,7 @@
             </div>
         </section>
 
-        <section style="margin-bottom: 90px;">
+        <section style="margin-bottom: 90px;" id="block8">
             <div class="container">
                 <div class="activity">
                     <div class="activity__text mr-30">
@@ -473,6 +424,7 @@
     </div>
 </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/header.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/script.min.js"></script>
 </body>
