@@ -10,6 +10,7 @@
     <title>Тандем</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Montserrat:wght@900&family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">    
@@ -70,7 +71,7 @@
             <div class="information">
                 <div class="container">
                     <div class="information__content">
-                        <div class="information__header">
+                        <div class="information__header" id="partners">
                             <div class="information__main-text">
                                 <h2 class="title-white prefix"><span class="prefix-line">/</span>Направления и партнёры</h2>
                                 <p>Мы выполняем полный спектр проектных работ для недропользователей в области геологоразведки, геологии и разработки нефтяных и газовых месторождений.</p>
@@ -79,7 +80,9 @@
                             <div class="information__secondary-text">
                                 <p>В числе наших партнеров доминируют крупные государственные и частные нефтегазовые компании, научно-исследовательские центры и институты.</p>
                                 <div class="text text--white">
-                                    Основные направления нашей деятельности следующие:
+                                    
+                                    <span>Основные направления нашей деятельности следующие:</span>
+                                    
                                     <ul>
                                         <li>Обработка и интерпретация данных сейсморазведочных работ</li>
                                         <li>Интерпретация данных геофизических исследований скважин</li>
@@ -90,7 +93,21 @@
                                         <li>Проектирование геологоразведочных работ</li>
                                         <li>Экспертиза по недропользованию</li>
                                     </ul>
-                                    <a href="" class="btn btn--green">Подробнее</a>
+
+                                    <details class="details" style="display: none;">
+                                        <summary>Основные направления нашей деятельности</summary>
+                                        <ul>
+                                            <li>Обработка и интерпретация данных сейсморазведочных работ</li>
+                                            <li>Интерпретация данных геофизических исследований скважин</li>
+                                            <li>Подсчет запасов углеводородного сырья</li>
+                                            <li>Проектирование разработки нефтяных и газовых месторождений</li>
+                                            <li>Локализация и освоение трудноизвлекаемых запасов углеводородов</li>
+                                            <li>Оценка перспективных участков недр</li>
+                                            <li>Проектирование геологоразведочных работ</li>
+                                            <li>Экспертиза по недропользованию</li>
+                                        </ul>
+                                    </details>
+                                    <a href="activities.html" class="btn btn--green">Подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -301,7 +318,7 @@
                             <div class="news__info-text">
                                 <h2 class="title-dark prefix"><span class="prefix-line">/</span>Последние новости</h2>
                                 <div class="text text--dark-blue">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras velit magna, tristique vel libero et, sodales dictum velit. Maecenas et felis et ipsum tempus facilisis. Duis nibh dui, condimentum nec lacinia quis, ornare nec enim. Aenean aliquet est eget porttitor consequat. Nunc id pellentesque libero, nec venenatis metus. Aenean pretium mi id consequat fermentum. Sed vitae sagittis nunc.</p>
+                                    <p>Коллектив компании Тандем имеет собственную корпоративную культуру, а также участвует в мероприятиях, в рядах которых оказываются не только коллеги, но также их семьи и дети. Спортивные мероприятия, путешествия, новогодние утренники, корпоративы - лишь малая часть насыщенной жизни нашей большой Семьи.</p>
                                 </div>
                             </div>
                             <div class="news__info-btns">
@@ -337,20 +354,10 @@
                                 </article>
                                 <article class="slider__item">
                                     <a class="news__block" href="">
-                                        <img src="images/photo/photo-1.jpg" alt="">
+                                        <img src="images/christmas-tree.jpg" alt="">
                                         <div class="news__block-content">      
-                                            <p>Круто, да? Когда-нибудь так и будет! Ну а в 2022 году праздник прошел 27 декабря в бутик-отеле «Green House» и он был КОСТЮМИРОВАННЫЙ! Да, да, именно так.</p>
-                                            <h3>Отгремел на весь Египет новогодний корпоратив ТАНДЕМА</h3>
-                                            <time datetime="2022-10-10">10.10.2022</time>
-                                        </div>
-                                    </a>
-                                </article>
-                                <article class="slider__item">
-                                    <a class="news__block" href="">
-                                        <img src="images/photo/photo-1.jpg" alt="">
-                                        <div class="news__block-content">      
-                                            <p>Круто, да? Когда-нибудь так и будет! Ну а в 2022 году праздник прошел 27 декабря в бутик-отеле «Green House» и он был КОСТЮМИРОВАННЫЙ! Да, да, именно так.</p>
-                                            <h3>Отгремел на весь Египет новогодний корпоратив ТАНДЕМА</h3>
+                                            <p>Уже не первый год дед Мороз тайно готовит подарки всем желающим, однако дедушка Мороз у каждого свой. Из мешочка каждый вытягивал имя сотрудника, которому должен подарить подарок, да так, чтобы никто не догадался, что он от тебя. Фантазия сработала на ура!<br>В назначенное время вокруг елки собираются все-все-все и уже настоящий Дед Мороз раздает подарки адресатам. Вот такая корпоративная традиция.</p>
+                                            <h3>Тайный Дед Мороз</h3>
                                             <time datetime="2022-10-10">10.10.2022</time>
                                         </div>
                                     </a>
@@ -372,7 +379,7 @@
                                 <img src="images/page-card-2.jpg" alt="Скалы">
                                 <div class="pages__card-content">
                                     <h3>Виды деятельности</h3>
-                                    <p>Полный спектр проектных работ для недропользователей в области геологоразведки, геологии и разработки нефтяных и газовых месторождений с индивидуальным подходом</p>
+                                    <p>Полный спектр проектных работ для недропользователей в области геологоразведки, геологии и разработки нефтяных и газовых месторождений с индивидуальным подходом.</p>
                                     <button class="btn btn--white">Подробнее</button>
                                 </div>
                             </a>
