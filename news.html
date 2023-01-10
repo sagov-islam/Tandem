@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?v=1.0.0">
     <title>Тандем</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Montserrat:wght@900&family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Montserrat:wght@900&family=Nunito+Sans:wght@800&display=swap&family=Marck+Script&display=swap" rel="stylesheet">
+     
 </head>
 <body>
     <main>
@@ -32,45 +35,62 @@
                 <div class="container">
                     <div class="news-block__content">
                         <ul class="news-block__list">
-                            <li>
+                            <li class="news-block__item">
                                 <article>
-                                    <a href="" class="news-block__item">
-                                        <img src="images/photo/photo-1.jpg" alt="">
-                                        <div class="news-block__item-text">
-                                            <time datetime="2022-10-10">10.10.2022</time>
-                                            <h2>Корпоратив</h2>
-                                            <p>Отгремел на весь Египет новогодний корпоратив ТАНДЕМА...<br>
-                                                Круто, да? Когда-нибудь так и будет! Ну а в 2022 году праздник прошел 27 декабря в бутик-отеле «Green House» и он был КОСТЮМИРОВАННЫЙ! Да, да, именно так.<br>
-                                                Были и принцессы, и Боб Марли, и Печкин, и другие герои мультфильмов, сериалов и любимых артистов. Где хоть их всех встретишь в одном месте? А вот мы и встретили и все вместе проводили 2022 год!</p>
-                                            <button class="btn btn--green">Подробнее</button>
+                                    <img src="images/photo/photo-1.jpg" alt="">
+                                    <div class="news-block__item-text">
+                                        <time datetime="2022-10-10">10.10.2022</time>
+                                        <h2>Корпоратив</h2>
+                                        <div class="news-block__item-text-container otherBrowsers">
+                                            <p>
+                                                Отгремел на весь Египет новогодний корпоратив ТАНДЕМА...<br>
+                                                Круто, да? Когда-нибудь так и будет! Ну а в 2022 году праздник прошел 27 декабря в бутик-отеле «Green House» и он был КОСТЮМИРОВАННЫЙ! Да, да, именно так.
+                                            </p>
+                                            <p>
+                                                Были и принцессы, и Боб Марли, и Печкин, и другие герои мультфильмов, сериалов и любимых артистов. Где хоть их всех встретишь в одном месте? А вот мы и встретили и все вместе проводили 2022 год!
+                                            </p>
                                         </div>
-                                    </a>
+                                        <button class="btn btn--green" data-news-btn="showMore">Подробнее</button>
+                                        <button class="btn btn--inherit d-none" data-news-btn="showLess">Скрыть</button>
+                                        
+                                    </div>
                                 </article>
                             </li>
-                            <li>
+                            <li class="news-block__item">
                                 <article>
-                                    <a href="" class="news-block__item">
-                                        <img src="images/photo/photo-2.jpg" alt="">
-                                        <div class="news-block__item-text">
-                                            <time datetime="2022-10-10">10.10.2022</time>
-                                            <h2>Футбол в ТАНДЕМе</h2>
-                                            <p>Фраза хороша, как ни крути, а еще лучше этой фразы – это ее капитан Черняев Антон! За прошлый год под его началом команда участвовала в благотворительном дружественном матче «Кубка Добра», а также в рамках турнира Тюменской Городской Федерации Футбола 2022-2023 г.</p>
-                                            <button class="btn btn--green">Подробнее</button>
+                                    <img src="images/photo/photo-2.jpg" alt="">
+                                    <div class="news-block__item-text">
+                                        <time datetime="2022-10-10">10.10.2022</time>
+                                        <h2>Футбол в ТАНДЕМе</h2>
+                                        <div class="news-block__item-text-container otherBrowsers">
+                                            <p>
+                                                Фраза хороша, как ни крути, а еще лучше этой фразы – это ее капитан Черняев Антон! За прошлый год под его началом команда участвовала в благотворительном дружественном матче «Кубка Добра», а также в рамках турнира Тюменской Городской Федерации Футбола 2022-2023 г.
+                                            </p>
                                         </div>
-                                    </a>
+                                        <button class="btn btn--green" data-news-btn="showMore">Подробнее</button>
+                                        <button class="btn btn--inherit d-none" data-news-btn="showLess">Скрыть</button>
+                                        
+                                    </div>
                                 </article>
                             </li>
-                            <li>
+                            <li class="news-block__item">
                                 <article>
-                                    <a href="" class="news-block__item">
-                                        <img src="images/christmas-tree.jpg" alt="">
-                                        <div class="news-block__item-text">
-                                            <time datetime="2022-10-10">10.10.2022</time>
-                                            <h2>Тайный Дед Мороз</h2>
-                                            <p>Уже не первый год дед Мороз тайно готовит подарки всем желающим, однако дедушка Мороз у каждого свой. Из мешочка каждый вытягивал имя сотрудника, которому должен подарить подарок, да так, чтобы никто не догадался, что он от тебя. Фантазия сработала на ура!<br>В назначенное время вокруг елки собираются все-все-все и уже настоящий Дед Мороз раздает подарки адресатам. Вот такая корпоративная традиция.</p>
-                                            <button class="btn btn--green">Подробнее</button>
+                                    <img src="images/christmas-tree.jpg" alt="">
+                                    <div class="news-block__item-text">
+                                        <time datetime="2022-10-10">10.10.2022</time>
+                                        <h2>Тайный Дед Мороз</h2>
+                                        <div class="news-block__item-text-container otherBrowsers">
+                                            <p>
+                                                Уже не первый год дед Мороз тайно готовит подарки всем желающим, однако дедушка Мороз у каждого свой. Из мешочка каждый вытягивал имя сотрудника, которому должен подарить подарок, да так, чтобы никто не догадался, что он от тебя. Фантазия сработала на ура!
+                                            </p>
+                                            <p>
+                                                В назначенное время вокруг елки собираются все-все-все и уже настоящий Дед Мороз раздает подарки адресатам. Вот такая корпоративная традиция.
+                                            </p>
                                         </div>
-                                    </a>
+                                        <button class="btn btn--green" data-news-btn="showMore">Подробнее</button>
+                                        <button class="btn btn--inherit d-none" data-news-btn="showLess">Скрыть</button>
+                                        
+                                    </div>
                                 </article>
                             </li>
                         </ul>
@@ -98,6 +118,6 @@
     <script src="js/header.min.js"></script>
     <script src="js/footer.min.js"></script>
     <script src="slick/slick.min.js"></script>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.min.js?v=1.0.2"></script>
 </body>
 </html>
