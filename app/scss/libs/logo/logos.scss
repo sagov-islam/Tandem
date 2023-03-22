@@ -1,0 +1,9 @@
+.logo {
+    position: relative;
+    display: inline-block;
+    width: 204px;
+    height: 32px;
+    @include bg($url: '../images/logos/logo.png', $size: contain);
+
+    
+}

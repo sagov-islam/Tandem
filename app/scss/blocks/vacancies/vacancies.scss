@@ -1,0 +1,100 @@
+.vacancies {
+    background: #F4F6F9;
+    padding: 66px 0;
+    &__no-vacancies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px 20px 20px;
+        img {
+            width: 100%;
+            max-width: 383px;
+            max-height: 345px;
+        }
+        p {
+            text-align: center;
+            font-family: $inter;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 120%;
+            margin-top: 20px;
+            color: $dark-blue;
+        }
+    }
+
+    &__accordion {
+        margin-top: 45px;
+        width: 100%;
+        &-item {
+            background: #fff;
+            transition: background .2s;
+            border: 1px solid #DFE1EC;
+            border-radius: 10px;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+            &.dark {
+                background-color: $dark-blue;
+                .vacancies__accordion-text, .vacancies__accordion-btn {
+                    color: #fff;
+                }
+            }
+        }
+        &-text {
+            overflow: hidden;
+            transition: height .2s, color .2s;
+            height: 0;
+            padding: 0 28px;
+        }
+        &-btnClose {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 35px;
+            min-height: 35px;
+            border-radius: 50%;
+            background-color: $light-green;
+            transition: background-color .2s;
+
+            svg {
+                transition: transform .2s;
+                transform: rotate(45deg);
+            }
+            path {
+                transition: fill .3s;
+                fill: #fff;
+            }    
+        }
+        &-btn {
+            border-radius: 10px;
+            width: 100%;
+            padding: 24px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: inherit;
+            font-family: $inter;
+            font-style: normal;
+            font-weight: 750;
+            font-size: 20px;
+            line-height: 24px;
+            color: $dark-blue;
+            transition: color .2s;
+            &.hide {
+                .vacancies__accordion-btnClose {
+                    background-color: inherit;
+                    svg {
+                        transform: rotate(0deg);
+                    }
+                    path {
+                        fill: #181818;
+                    }   
+                }
+            }
+        }
+    }
+    h2 {
+        margin-left: 29px;
+    }
+    
+}

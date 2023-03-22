@@ -1,0 +1,72 @@
+.geography {
+    padding: 106px 0 92px 0;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img-container {
+        flex: 1;
+        margin: 0 35px 140px -40px;
+        svg {
+        width: 100%;
+        height: 100%;
+        }   
+    }
+    &__text {
+        flex: 1;
+        max-width: 560px;
+    }
+    h2 {
+        margin-left: 25px;
+        margin-bottom: 15px;
+    }
+    &__cities {
+        font-family: $tahoma;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 18px;
+        color: $dark-blue;
+
+    }
+    &__statistics {
+        @extend .unselectable;
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 37px;
+        &-number {
+            font-family: $inter;
+            font-style: normal;
+            font-weight: 750;
+            font-size: 42px;
+            line-height: 38px;
+            display: block;
+            margin-bottom: 12px;
+            max-width: 187px;
+            color: $dark-blue;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 36px;
+                height: 36px;
+                transform: rotate(-30deg);
+                @include bg('../images/arrow-1.svg', $size: contain)
+            }
+        }
+        &-text {
+            font-family: $tahoma;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: $dark-blue;
+        }
+    }
+}

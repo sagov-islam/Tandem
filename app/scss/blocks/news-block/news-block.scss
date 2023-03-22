@@ -1,0 +1,108 @@
+.news-block {
+    padding: 70px 0;
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        padding: 60px 0;
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(33, 69, 132, 0.15);;
+        }
+        article {
+            display: flex;
+        }
+        .btn {
+            margin-top: 15px;
+        }
+        img {
+            height: 290px;
+            min-width: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+
+        }
+        &-text {
+            margin-left: 50px;
+            &-container {
+                &.otherBrowsers {
+                    // @include text-clamp(4);
+                    height: 90px;
+                    overflow: hidden;
+                }
+                &.safari {
+                    height: 90px;
+                    overflow: hidden;
+                }
+                
+            }
+        }
+        time {
+            font-family: $inter;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 120%;
+            color: rgba(33, 69, 132, 0.5);
+        }
+
+        h2 {
+            font-family: $inter;
+            font-style: normal;
+            font-weight: 750;
+            font-size: 20px;
+            line-height: 120%;
+            color: $dark-blue;
+            margin: 10px 0;
+        }
+        p {
+            font-family: $inter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: $dark-blue;
+        }
+        p:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__btns {
+        margin-top: 17px;
+        display: flex;
+        justify-content: center;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            a {
+                display: inline-block;
+                width: 48px;
+                height: 48px;
+                background: inherit;
+                border: 2px solid #21c9f8;
+                border-radius: 4px;
+                font-family: $inter;
+                color: $light-green;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                transition: background .2s;
+                &:hover {
+                    background: #eafaff;
+                }
+                &.active {
+                    background-color: $light-green;
+                    color: #fff;
+                }
+            }
+        }
+        .btn-slider, ul a {
+            margin: 5px;
+        }
+    }
+}

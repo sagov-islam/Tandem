@@ -1,0 +1,60 @@
+
+
+
+
+.contacts-block {
+    padding: 220px 0 128px 0;
+    @include bg('../images/bg-5.jpg', $size: cover);
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 60px;
+        row-gap: 40px;
+    }
+    h1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-left: 25px;
+    }
+    &__form {
+        height: 504px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        button[type="submit"] {
+            max-width: 140px;
+        }
+        textarea {
+            height: 100%;
+        }
+        input, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    &__info {
+        .btn--green {
+            margin-right: 10px;
+        }
+    }
+
+    .contacts {
+        max-width: 349px;
+        margin-bottom: 30px;
+        a {
+            font-family: $inter;
+            font-size: 22px;
+            font-weight: 200;
+        }
+        &__location {
+            font-size: 22px;
+            line-height: 120%;
+            svg {
+                margin-right: 15px;
+            
+            }
+        }
+    }
+}

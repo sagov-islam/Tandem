@@ -1,0 +1,113 @@
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    text-transform: 0;
+    left: 0;
+    z-index: 300;
+    transition: .2s;
+    visibility: visible;
+    opacity: 1;
+    &--hide {
+        visibility: hidden;
+        opacity: 0;
+        .modal__content {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        
+    }
+    &__bg {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        
+    }
+    &__content {
+        transition: .2s;
+        width: 100%;
+        max-width: 500px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.411);
+    }
+    &__inputs-container {
+        display: flex;
+        input {
+            width: 100%;
+            flex: 1;
+        }
+        input:first-child {
+            margin-right: 15px;
+        }
+        margin-bottom: 20px;
+        
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+    &__footer {
+        margin-top: 30px;
+    }
+    &__success {
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 120%;
+        color: $dark-blue;
+        text-align: center;
+        position: relative;
+        margin-top: 80px;
+    
+    
+        &::before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            @include bg('../images/success.png', $size: contain);
+            left: 50%;
+            transform: translate(-50%, -120%);
+        }
+    }
+    &__submit {
+        color: $light-green;
+        padding: 19px;
+        width: 100%;
+        border: 1px solid $light-green;
+        border-radius: 4px;
+        font-size: 16px;
+        font-family: $inter;
+        font-weight: 400;
+        background: inherit;
+        transition: .2s;
+        &:hover {
+            background: $light-green;
+            color: #fff;
+        }
+    }
+
+    .input-file {
+        margin-top: 20px;
+    }
+
+    &__title {
+        font-family: $inter;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 120%;
+        color: $dark-blue;
+    }
+}

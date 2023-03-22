@@ -1,0 +1,161 @@
+.btn-letter {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background-color: inherit;
+    path {
+        transition: .2s;
+        fill: #1a1a1a;
+    }
+    &:hover {
+        path {
+            fill: $light-green;
+        }   
+    }
+}
+.btn-phone {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: inherit;
+    path {
+        transition: .2s;
+        fill: #1a1a1a;
+    }
+    &:hover {
+        path {
+            fill: $light-green;
+        }   
+    }
+}
+
+.btn-close {
+    background-color: inherit;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border: 1px solid $light-green;
+    border-radius: 50%;
+    transition: .1s;
+    &:hover {
+        background-color: $light-green;
+        &::before, &::after {
+            background-color: #fff;
+        }
+    }
+    &::before, &::after {
+        transition: .1s;
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 70%;
+        height: 1px;
+        background-color: $light-green;
+        right: 50%;
+        
+    }
+    &::before {
+        transform: translateX(50%) rotate(45deg);
+    }
+    &::after {
+        transform: translateX(50%) rotate(-45deg);
+    }
+}
+
+.btn {
+    @extend .unselectable;
+    display: inline-block;
+    padding: 9px 30px 10px 30px;
+    border-radius: 4px;
+
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    &--green {
+        color: #fff;
+        background: $light-green;
+        transition: background .2s;
+        &:hover {
+            background: #21c9f8;
+        }
+    }
+    &--white {
+        color: $light-green;
+        padding: 9px 30px 10px 30px;
+        font-size: 16px;
+        background: #fff;
+        transition: transform .2s;
+    }
+    &--inherit {
+        color: $light-green;
+        padding: 9px 30px 10px 30px;
+        border: 1px solid $light-green;
+        font-size: 16px;
+        background: inherit;
+        transition: transform .2s;
+        &:hover {
+            background: $light-green;
+            color: #fff;
+        }
+    }
+}
+
+
+
+.btn-slider {
+    border-radius: 4px;
+    width: 48px;
+    height: 48px;
+    transition: background .2s;
+    
+    &--fill {
+        background: $light-green;
+        &:hover {
+            background: #21c9f8;
+        }
+        path {
+            stroke: #fff;
+        }
+    }
+    &--white {
+        background: #fff;
+        &:hover {
+            background: rgb(238, 246, 248)
+        }
+        path {
+            stroke: $light-green;
+        }
+    }
+    &--inherit {
+        background: inherit;
+        border: 2px solid #21c9f8;
+        &:hover {
+            background: #eafaff;
+        }
+        path {
+            stroke: $light-green;
+        }
+
+    }
+    &--inherit-white {
+        background: inherit;
+        border: 2px solid #fff;
+        &:hover {
+            border: 2px solid $light-green;
+            path {stroke: $light-green}
+        }
+        path {
+            stroke: #fff;
+        }
+
+    }
+}
+
+.btn-prev {
+    svg {
+        transform: rotate(180deg);
+    }
+}
+

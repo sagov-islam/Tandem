@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'Tahoma';
+	src: url('../fonts/tahoma.ttf');
+	src: local('☺'), url('../fonts/tahoma.ttf') format('ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bethoveen';
+	src: url('../fonts/ludvig_van_bethoveen.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/ludvig_van_bethoveen.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/ludvig_van_bethoveen.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/ludvig_van_bethoveen.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/ludvig_van_bethoveen.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/ludvig_van_bethoveen.svg#ludvig_van_bethoveen') format('svg'); /* Chrome < 4, Legacy iOS */
+}

@@ -1,0 +1,30 @@
+
+
+.school {
+    padding: 66px 0;
+    background-color: #F4F6F9;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    h2 {
+        margin-bottom: 21px;
+        margin-left: 25px;
+    }
+    &__text {
+        max-width: 531px;
+        margin-right: 30px;
+    }
+    &__slider {
+        &-cont {
+            width:455px;
+            height: 355px;
+        }
+        img {
+            width: 98%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.footer {
+    background-color:#0C1C38;
+    padding: 76px 0 42px 0;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__support {
+        margin-top: 50px;
+        p {
+            font-family: $inter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 15px;
+        }
+        .support {
+            background-color: #fff;
+            padding: 7px;
+            border-radius: 5px;
+            width: 80px;
+            height: 60px;
+            display: inline-block;
+            margin: 5px;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            object-fit: contain;
+            
+            display: inline-block;
+
+            
+        }
+    }
+    &__company {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 20px;
+        .logo {
+            width: 181px;
+            margin-bottom: 7px;
+        }
+
+        &-motto {
+            font-family: $inter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    strong {
+        font-family: $inter;
+        display: inline-block;
+        margin-bottom: 25px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #FFFFFF;
+    }
+
+    &__main-links, &__about-us-links {
+        margin-right: 20px;
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+        }
+        a {
+            font-family: $inter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(255, 255, 255, 0.7);
+            transition: color .2s;
+            white-space: nowrap;
+            &:hover {
+                color: $light-green;
+            }
+        }
+    }
+
+    .contacts {
+        max-width: 217px; 
+    }
+}

@@ -1,0 +1,88 @@
+.information {
+    background-color: $dark-blue;
+    padding: 76px 0px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__main-text {
+        margin-right: 30px;
+        h2 {
+            margin: 0 0px 25px 25px;
+            max-width: 277px;
+        }
+        p {
+            max-width: 420px;
+            font-family: $tahoma;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 145.5%;
+            color: #FFFFFF;
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    &__secondary-text {
+        max-width: 630px;
+        & >  p {
+            font-family: $tahoma;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 145.5%;
+            color: #FFFFFF;
+            margin-bottom: 23px;
+        }
+    }
+
+    &__footer {
+        margin-top: 58px;
+        position: relative;
+      
+        .btn-slider {
+            position: absolute;
+            top: 50%;
+            z-index: 20;
+            transform: translateY(-50%);
+        }
+        .btn-next {
+            right: -30px;
+            height: 60px;
+            width: 60px;
+        }
+        .btn-prev {
+            left: -30px;
+            height: 60px;
+            width: 60px;
+        }
+        .slider {
+           display: flex;
+           justify-content: center;
+        }
+        .slider__item {
+            &:first-child {
+                margin-left: -5px;
+            }
+            &-content {
+                border: 1px solid #00DBFF;
+                width: 212px;
+                height: 212px;
+                border-radius: 50%;
+                background-color: #fff;
+                padding: 30px;
+                
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    } 
+    .details {
+        margin-bottom: 15px;
+    }
+}

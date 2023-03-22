@@ -1,0 +1,35 @@
+.title {
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    color: $dark-blue;
+}
+
+.prefix {
+    position: relative;
+    &-line {
+        top: -3px;
+        position: absolute;
+        transform: translateX(-130%);
+        font-family: $inter;
+        font-weight: 800;
+        color: #00DBFF;
+    }
+}
+
+.title-white {
+    font-family: $nunito;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 118.9%; 
+    color: #fff;
+}
+.title-dark {
+    font-family: $nunito;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 118.9%;
+    color: $dark-blue;
+}

@@ -1,0 +1,27 @@
+.activity-radio {
+    cursor: pointer;
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .activity-radio__style {
+            background-color: $light-green;
+            color: #fff;
+        }
+    }
+    &__style {
+        background: #E9EDF3;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 10px 28px;
+        font-family: $inter;;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        &:hover {
+            background: #dbe2ee;
+        }
+    }
+}

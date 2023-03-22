@@ -1,0 +1,59 @@
+.workers {
+    padding: 51px 0;
+    margin-bottom: 88px;
+    background-color: $dark-blue;
+    z-index: 15;
+    &__content {
+        position: relative;
+    }
+    &__btns {
+        z-index: 20;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        .btn-prev {
+            margin-right: 8px;
+        }
+        
+    }
+    &__slider {
+        &-item {
+            &-content {
+                display: flex;
+                padding-right: 20px;
+            }
+            img {
+                min-width: 177px;
+                margin-right: 35px;
+                margin-left: 2px;
+                background-color: #fff;
+            }
+        
+            
+        }
+        &-text {
+            display: flex;
+            flex-direction: column;
+        }
+        &-work {
+            display: inline-block;
+            font-family: $nunito;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 3px 0 15px 0;
+            line-height: 25px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        h3 {
+            font-family: $inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 38px;
+            color: #FFFFFF;
+        }
+    }
+   
+}

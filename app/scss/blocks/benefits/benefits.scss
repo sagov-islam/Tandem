@@ -1,0 +1,89 @@
+.benefits {
+    padding: 66px 0;
+    h2 {
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+    &__list {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    &__item {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 20px;
+        background-color: #E9EDF3;
+        border-radius: 8px;
+        transition: background-color .2s;
+
+        h3, span {
+            cursor: default;
+        }
+
+        svg {
+            height: 100px;
+        }
+
+        h3 { 
+            transition: color .2s;
+            font-family: $inter;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 17px;
+            line-height: 19px;
+            text-align: center;
+            color: $dark-blue;
+        }
+        span {
+            transition: color .2s;
+            margin-top: 9px;
+            font-family: $inter;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+
+            color: $dark-blue;
+        }
+    }
+}
+
+.benefit-fill {
+    &:hover {
+        background-color: $light-green;
+        h3,span {
+            color: #fff;
+        }
+        path {
+            fill: #fff;
+        }
+    }
+    svg {
+        path {
+            transition: fill .2s;
+            fill: $dark-blue;
+        }
+    }
+}
+
+.benefit-stroke {
+    svg {
+        path {
+            stroke: $dark-blue;
+        }
+    }
+    &:hover {
+        background-color: $light-green;
+        h3,span {
+            color: #fff;
+        }
+        path {
+            stroke: #fff;
+        }
+    }
+}

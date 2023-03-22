@@ -1,0 +1,727 @@
+@media (max-width: 1300px) {
+    .information {
+        .slider {
+            padding: 0 30px;
+        }
+        .btn-prev {
+            left: 0;
+        }
+        .btn-next {
+            right: 0;
+        }
+    }
+}
+@media (max-width: 1130px) {
+    .burger {
+        display: block;
+    }
+
+    .header {
+        .logo {
+            margin-right: auto;
+        }
+        &__content {
+            justify-content: start;
+        }
+        &__nav {
+            display: none;
+        }
+        &__text {
+            order: 2;
+            margin-right: auto;
+            margin-left: 0;
+        }
+        .logo {
+            order: 1;
+            display: flex;
+        }
+        &__icons {
+            order: 3;
+        }
+        .burger {
+            order: 4;
+        }
+    }
+}
+@media (max-width: 1000px) {
+
+    .benefits {
+        &__list {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .school {
+        &__content {
+            flex-direction: column;
+        }
+        &__text {
+            order: 2;
+            margin-right: 0;
+            margin-top: 30px;
+            max-width: 100%;
+        }
+        &__slider-cont {
+            order: 1;
+            width: 100%;
+            height: auto;
+            ul {
+                li {
+                    height: 500px;
+                }
+            }
+        }
+        
+    }
+
+    .team {
+        &__slider img {
+            object-fit: contain;
+        }
+    }
+
+    .history {
+        &__block {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text {
+            order: 2;
+            margin: 20px 0 0 0 !important;
+        }
+        img {
+            order: 1;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .workers {
+        margin-bottom: 44px;
+        &__slider {
+            &-item-content {
+                flex-direction: column;
+                align-items: center;
+                padding-right: 0px;
+                img {
+                    margin: 0 0 0 0;
+                }
+            }
+            
+            &-text {
+                align-items: center;
+                margin-top: 15px;
+                margin-left: 2px;
+            }
+        }
+    }
+
+    .vacancies {
+        padding: 32px 0;
+    }
+
+    .activity {
+        flex-direction: column;
+        align-items: center;
+        &__slider {
+            margin-right: 0 !important;
+            min-width: 90%;
+            order: 1;
+        }
+        .slick-dotted.slick-slider {
+            margin-bottom: 78px;
+        }
+        &__text {
+            order: 2;
+            margin-right: 0 !important;
+            text-align: center;
+            p, ul {
+                text-align: start;
+            }
+            a {
+                margin-bottom: 0px;
+            }
+            
+        }
+    }
+
+    .pages {
+        &__list {
+            grid-template-columns: 1fr 1fr;
+        }
+        &__card {
+            &:nth-child(3) {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+    }
+
+    .geography {
+        &__content {
+            flex-direction: column;
+        }
+        &__img-container {
+            margin: 0;
+            margin-bottom: 30px;
+        }
+        &__text {
+            max-width: 100%;
+        }
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .news-block {
+        &__item {
+            article {
+                flex-direction: column;
+            }
+            &-text {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            img {
+                min-width: 100%;
+            }
+        }
+    }
+
+    .contacts {
+        &-block {
+            padding: 114px 0 128px 0;
+            &__content {
+                grid-template-columns: 1fr;
+            }
+            &__form {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            &__info {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+    }
+
+    .benefits {
+        &__list {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .school__slider-cont ul li {
+        height: 265px;
+    }
+
+    .period {
+        &__years {
+            font-size: 20px !important;
+            span::before {
+                transform: translateY(-19%);
+                height: 151%;
+            }
+        }
+    }
+    .period-3 .period__text::before {
+        height: 199px;
+    }
+
+    .projects {
+        padding-top: 57px;
+        &__slider-container {
+            margin-top: 99px;
+        }
+        &__item {
+            margin-right: auto;
+            margin: 0 1px;
+            &-content {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+            }
+            &-text {
+                margin-top: 20px;
+                height: 230px;
+                text-align: center;
+                
+                h3 {
+                    font-size: 25px;
+                    text-align: center;
+                    flex-direction: column;
+                    .canScroll {
+                        order: -1;
+                        margin-bottom: 20px;
+                        margin-right: 0;
+                    }
+                }
+                .text {
+                    text-align: start;
+                }
+            }
+        }
+        &__image-container {
+            margin-right: 0;
+            min-width: 100%;
+            img {
+                object-fit: cover;
+            }
+        }
+        .btns-cont {
+            top: 0;
+            bottom: auto;
+            transform: translateX(-50%) translateY(-120%);
+            max-width: 100%;
+        }
+    }
+
+    .team {
+        &__slider {
+            height: auto;
+            .slick-list, .slick-track {
+               height: auto;
+            }
+            &-btns {
+                top: 10px;
+                transform: translateY(0);
+            }
+            &-item {
+                display: flex;
+                align-items: flex-start;
+                height: auto;
+              
+                img {
+                    
+                    object-position: top;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+@media (max-width: 700px) {
+
+    .vacancies__no-vacancies {
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .title, .title-white, .title-dark {
+        font-size: 33px;
+        text-align: center;
+    }
+
+    .history {
+        &-years__content {
+            grid-template-columns: 1fr;
+        }
+    }
+    .period {
+        align-items: center;
+        margin-bottom: 35px;
+        &__years {
+            order: 1;
+            height: 202px !important;
+            width: 100%;
+        }
+        &__text {
+            max-width: 200px;
+            order: 2;
+            margin: 20px 0 0 0 !important;
+            &::before , &::after{
+                display: none;
+            }
+        }
+    }
+
+    .statistics {
+        &__content {
+           grid-template-columns: 1fr 1fr; 
+        }
+    }
+    .footer {
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .contacts {
+            margin-top: 20px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            max-width: 100%;
+            align-items: center;
+            a {
+                margin-bottom: 10px;
+            }
+            &__location {
+                svg {
+                    margin: 0;
+                    margin-top: -3px;
+                    width: 36px;
+                }
+            }
+            & + .footer__support {
+                display: flex !important;
+                flex-direction: column;
+                align-items: center;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                margin-top: 20px;
+            }
+        }
+        &__company {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            align-items: center;
+            margin-bottom: 20px;
+            .footer__support {
+                display: none;
+            }
+        }
+        &__main-links {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            ul {
+                text-align: center;
+            }
+        }
+        &__about-us-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            ul {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        &__text {
+            display: none;
+        }
+    }
+    .burger {
+        &__text {
+            display: block;
+        }
+    }
+
+    .news-block {
+        padding: 70px 0 40px 0;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+
+    .blockquote {
+        padding: 66px 54px;
+        h2 {
+            font-size: 19px;
+        }
+        blockquote {
+            font-size: 20px;
+            line-height: 152.7%;
+        }
+        &::before, &::after {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    .page-block {
+        min-height: auto;
+        
+        &__content {
+            padding: 120px 0 50px 0;
+        }
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    .activities {
+        &__small-title {
+            margin-bottom: 0;
+        }
+        &__list {
+            flex-direction: column;
+            a {
+                width: 100%;
+                text-align: center;
+                padding: 17px 28px;
+            }
+        }
+    }
+
+   
+
+    .main-block {
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+        padding: 160px 0 76px 0;
+    }
+
+    .burger {
+        &__content {
+            width: 100vw;
+        }
+    }
+    .pages {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+        &__card {
+            
+                grid-column-start: 1;
+                grid-column-end: 3;
+        }
+    }
+    .information {
+        &__header {
+            flex-direction: column;
+        }
+        &__main-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            p {
+                max-width: 100%;
+            }
+        }
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .news {
+        &__block {
+            height: 100%;
+            flex-direction: column;
+        
+            img {
+                max-width: 100%;
+                height: 200px;
+                min-height: auto;
+            }
+        }
+        &__slider .slick-list {
+            height: auto;
+        }
+        .slick-track {
+        
+        }
+        
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .header {
+        .logo {
+            width: 175px;
+        }
+    }
+
+    .contacts-block {
+        padding: 114px 0 59px 0;
+        &__info {
+            .btn--green {
+                margin-right: 0 !important;
+                margin-bottom: 15px;
+            }
+        }
+  
+    }
+
+    .workers {
+        &__btns {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    .benefits {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .activity {
+        &__text {
+            h2 {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .page-block {
+        h1 {
+            font-size: 28px;
+        }
+    }
+
+    .title, .title-white, .title-dark {
+        font-size: 28px;
+        text-align: center;
+
+    }
+
+    .btn {
+        max-width: 100% !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-block {
+        h1 {
+            font-size: 30px;
+        }
+    }
+  
+    .statistics {
+        &__text {
+            max-width: 200px;
+        }
+        &__number {
+            font-size: 40px;
+            line-height: 52px;
+        }
+    }
+    .news {
+        &__info {
+            flex-direction: column;
+            align-items: center;
+            &-btns {
+                margin: 0;
+                margin-top: 40px;
+            }
+        }
+        &__slider .slick-list {
+            padding-top: 5px;
+            padding-bottom: 15px;
+        }
+    }
+
+    .information {
+        .slider__item {
+            display: flex;
+            justify-content: center;
+            padding-left: 10px;
+        }
+        .slick-track {
+            margin-left: 0px !important;
+        }
+        .slick-list {
+            min-width: 100vw !important;
+        }
+        &__secondary-text {
+            .text {
+                & > span {
+                    display: none;
+                    & + ul {
+                        display: none;
+                    }
+                }
+            }
+           
+        }
+
+        details {
+            display: block !important;
+        }
+    }
+}
+
+
+@media (max-width: 400px) {
+    .geography__statistics {
+        grid-template-columns: 1fr;
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-number {
+            max-width: 50%;
+            &::before {
+                right: -45px;
+            }
+        }
+        &-text {
+            text-align: center;
+            max-width: 264px;
+        }
+    }
+    .news-block {
+        
+        &__btns {
+            justify-content: space-between;
+            ul {
+                a {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            
+            .btn-slider {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    .header {
+        .logo {
+            width: 150px;
+            height: 22px;
+        }
+    }
+    .statistics {
+        &__content {
+            grid-template-columns: 1fr;
+        }
+    }
+    .footer {
+        .contacts {
+            align-items: flex-start;
+            strong {
+                width: 100%;
+                text-align: start;
+            }
+        }
+        .galaxy {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

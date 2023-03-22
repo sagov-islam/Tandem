@@ -1,0 +1,61 @@
+.input {
+    background: #FFFFFF;
+    border: 1px solid #CFCFCF;
+    border-radius: 4px;
+    padding: 19px 19px;
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #868484;
+
+}
+
+
+
+.input-file {
+
+    &__button {
+        &.error {
+            transition: .2s;
+            background-color: rgb(238, 49, 74);
+        }
+        &.success {
+            transition: .2s;
+            background-color: rgb(82, 216, 5);
+            &::before {
+                @include bg('../images/success-1.svg', $size: contain);
+                width: 30px;
+                height: 30px;
+            }
+        }
+        background-color: $light-green;
+        border-radius: 4px;
+        padding: 19px;
+        font-family: $inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        width: 100%;
+        position: relative;
+        transition: .2s;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 19px;
+            height: 25px;
+            width: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-block;
+            @include bg('../images/file.svg', $size: contain);
+        }
+    }
+}
+
+.textarea {
+    resize: none;
+}

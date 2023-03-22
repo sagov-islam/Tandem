@@ -1,0 +1,32 @@
+body {
+    font-family: 'Tahoma';
+    font-weight: 400;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+html, body {
+    overflow-x: hidden;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.galaxy {
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 30px;
+    a {
+        color: #fff;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

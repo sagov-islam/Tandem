@@ -1,0 +1,40 @@
+.team {
+    margin-top: 93px;
+    h2 {
+        margin: 0 0 26px 25px;
+    }
+    &__text {
+        margin-bottom: 40px;
+    }
+    &__slider {
+        &-container {
+            position: relative;
+        }
+        &-btns {
+            padding: 0 17px;
+            position: absolute;
+            z-index: 20;
+            display: flex;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            justify-content: space-between;
+        }
+        &-item {
+            height: 700px;
+            &:first-child {
+                margin-right: 20px;
+            }
+            &:not(:first-child) {
+                margin: 0 10px;
+            }
+            img {
+                
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        
+    }
+}
